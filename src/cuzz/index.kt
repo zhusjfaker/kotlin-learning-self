@@ -1,4 +1,5 @@
 package cuzz
+
 import  java.sql.*
 import  java.sql.DriverManager
 
@@ -9,7 +10,7 @@ fun main(args: Array<String>) {
     val userPwd = "!dd19881221"
     try {
         Class.forName(driverName)
-        val dbConn :Connection = DriverManager.getConnection(dbURL, userName, userPwd)
+        val dbConn: Connection = DriverManager.getConnection(dbURL, userName, userPwd)
         println("连接数据库成功")
 
     } catch (e: Exception) {
@@ -18,4 +19,9 @@ fun main(args: Array<String>) {
 
     }
 
+    val list = listOf<Int>(1, 2);
+    val xlist = mutableListOf<Int>(2, 3, 4)
+    xlist.add(5)
+
 }
+
