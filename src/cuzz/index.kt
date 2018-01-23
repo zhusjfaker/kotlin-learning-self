@@ -1,7 +1,9 @@
 package cuzz
 
-import  java.sql.*
-import  java.sql.DriverManager
+import java.sql.*
+import java.sql.DriverManager
+import kotlinx.coroutines.experimental.*
+import java.util.concurrent.TimeUnit
 
 fun main(args: Array<String>) {
     val driverName = "com.microsoft.sqlserver.jdbc.SQLServerDriver"
@@ -19,9 +21,6 @@ fun main(args: Array<String>) {
 
     }
 
-    val list = listOf<Int>(1, 2);
-    val xlist = mutableListOf<Int>(2, 3, 4)
-    xlist.add(5)
-
 }
+
 
