@@ -33,3 +33,21 @@ suspend fun print(): String = "abc"
 
 fun <T> async(block: suspend () -> T) {
 }
+
+
+class Model {
+    object instance {
+        val c = 1
+    }
+
+    companion object {
+        val x = 2
+
+        fun test(): String {
+            return "123"
+        }
+
+        fun xs() {
+        }
+    }
+}
