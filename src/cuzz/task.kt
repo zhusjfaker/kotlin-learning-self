@@ -35,7 +35,7 @@ fun <T> async(block: suspend () -> T) {
 }
 
 
-class Model {
+open class Model {
     object instance {
         val c = 1
     }

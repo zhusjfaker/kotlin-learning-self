@@ -10,4 +10,12 @@ public class index {
         Model.instance.INSTANCE.getC();
 
     }
+
+
+    public void bos(){
+        Model.Companion.getX();
+        Model.Companion.test();
+        Model.Companion.xs();
+        Model.instance.INSTANCE.getC();
+    }
 }
