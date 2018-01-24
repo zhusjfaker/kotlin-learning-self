@@ -20,7 +20,7 @@ fun test() = runBlocking {
     }
     var k = async(CommonPool) {
         var a = doSomething()
-        print()
+        return@async print()
     }
     var m = k.await()
     task.join()
